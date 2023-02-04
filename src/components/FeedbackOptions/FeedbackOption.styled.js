@@ -41,4 +41,5 @@ export const Button = styled.button`
 export const OptionsContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  
 `;

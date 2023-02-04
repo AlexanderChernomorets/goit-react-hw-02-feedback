@@ -35,3 +35,5 @@ export const ItemNum = styled.span`
   font-size: 28px;
   font-family: 'Muli', sans-serif;
 `;
+
+

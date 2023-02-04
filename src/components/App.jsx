@@ -60,6 +60,7 @@ class App extends Component {
           border: '1px solid grey',
           borderRadius: '10px',
           textAlign: 'center',
+          backgroundColor: 'whitesmoke',
         }}
       >
         <Section title={'Please leave feedback'} />

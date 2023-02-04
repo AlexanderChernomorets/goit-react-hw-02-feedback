@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Title } from './Section.styled';
 
 function Section({ title }) {
@@ -9,3 +11,7 @@ function Section({ title }) {
 }
 
 export default Section;
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+}

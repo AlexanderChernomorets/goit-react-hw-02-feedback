@@ -9,4 +9,5 @@ export const Title = styled.p`
   line-height: 42px;
   text-transform: uppercase;
   text-shadow: 0 2px white, 0 3px #777;
+
 `;
