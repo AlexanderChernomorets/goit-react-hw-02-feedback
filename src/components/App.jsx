@@ -11,29 +11,9 @@ class App extends Component {
     bad: 0,
   };
 
-  // handleIncrementGood = () => {
-  //   this.setState(prevState => ({
-  //     good: prevState.good + 1,
-  //   }));
-  // };
-
-  // handleIncrementNeutral = () => {
-  //   this.setState(prevState => ({
-  //     neutral: prevState.neutral + 1,
-  //   }));
-  // };
-
-  // handleIncrementBad = () => {
-  //   this.setState(prevState => ({
-  //     bad: prevState.bad + 1,
-  //   }));
-  // };
-
   handleClick = e => {
     const { name } = e.target;
     this.setState(state => ({ [name]: state[name] + 1 }));
-    this.countTotalFeedback();
-    this.countPositiveFeedbackPercentage();
   };
 
   countTotalFeedback = () => {
@@ -50,7 +30,6 @@ class App extends Component {
     return (
       <div
         style={{
-          // height: '100vh',
           display: 'flex',
           flexDirection: 'column',
           color: '191919',
@@ -67,9 +46,6 @@ class App extends Component {
         <FeedbackOptions
           options={this.state}
           onLeaveFeedback={this.handleClick}
-          // onIncrementGood={this.handleIncrementGood}
-          // onIncrementBad={this.handleIncrementBad}
-          // onDecrementNeutral={this.handleIncrementNeutral}
         />
         {total === 0 ? (
           <Notification message="There is no feedback" />

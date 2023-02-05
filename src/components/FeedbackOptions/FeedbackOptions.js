@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Button, OptionsContainer } from './FeedbackOption.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const arr = Object.keys(options);
+  const optionsNames = Object.keys(options);
   return (
     <OptionsContainer>
-      {arr.map(a => {
+      {optionsNames.map(a => {
         return (
           <Button key={a} type="button" name={a} onClick={onLeaveFeedback}>
             {a}
